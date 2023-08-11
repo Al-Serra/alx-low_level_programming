@@ -2,8 +2,8 @@
 
 /**
  * main - the first function that gets executed
- * Return: zero, the program executed successfully without any errors
  *
+ * Return: zero, the program executed successfully without any errors
  */
 
 int main(void)
