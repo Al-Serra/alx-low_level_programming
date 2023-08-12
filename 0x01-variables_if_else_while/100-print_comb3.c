@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main - The Entry Function
+ * main -  prints all the smallest different combinations of two digits,
+ * Numbers seperated by a comma
+ * followed by a space, in ascending order
  * Return: Zero
  */
 int main(void)
@@ -11,13 +13,15 @@ int main(void)
 	{
 		for (m = i + 1 ; m < 10 ; m++)
 		{
-			putchar(i + '0');
-			putchar(m + '0');
-			if (m < 9)
-				{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar((i % 10) + '0');
+			putchar((m % 10) + '0');
+
+			if (i == 8 && m == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+
 		}
 	}
 	putchar('\n');
