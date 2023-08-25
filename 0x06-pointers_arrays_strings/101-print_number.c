@@ -7,16 +7,17 @@ void print_number(int n)
 {
 	int power = 1;
 	int np = 0;
+	int h = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		np = 1;
 	}
-	while (n > 9 || n < -9)
+	while (h > 9 || h < -9)
 	{
 		power *= 10;
-		n /= 10;
+		h /= 10;
 	}
 	while (power > 0)
 	{
